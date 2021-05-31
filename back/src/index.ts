@@ -9,6 +9,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 // Define Routes
+app.use("/api/main", require("./api/main"));
 
 
 // error handler

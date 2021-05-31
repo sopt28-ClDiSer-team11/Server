@@ -2,6 +2,8 @@ import express from "express";
 const app = express();
 import connectDB from "./Logger/db";
 
+import indexRouter from './router/index';
+
 // Connect Database
 connectDB();
 
@@ -9,6 +11,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 // Define Routes
+app.use("/", indexRouter);
 app.use("/api/users", require("./api/users"));
 app.use("/api/profile", require("./api/profile"));
 app.use("/api/posts", require("./api/post"));

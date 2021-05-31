@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { IBanner } from "../interfaces/Ibanner";
+import { IBanner } from "../interfaces/IBanner";
 
 const BannerSchema = new mongoose.Schema({
     user: {

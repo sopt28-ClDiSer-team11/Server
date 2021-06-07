@@ -4,6 +4,8 @@ import Banner from "../models/banner";
 import Category from "../models/category"
 import LastOrder from "../models/lastOrder"
 import Detail from "../models/detail"
+import Menu from "../models/menu"
+
 
 const connectDB = async () => {
   try {
@@ -64,6 +66,57 @@ const connectDB = async () => {
     //   console.log("Data Insert Success.");
     // });
 
+
+    // Menu.createCollection().then(function(collection) {
+    //   console.log('Menu Collection is created!');
+    // });
+    // Menu.insertMany([
+    //   {
+    //     "storeIdx" : "2",
+    //     "title": "모듬초밥 12P",        
+    //     "price": "12,000원",
+    //     "image" : "https://yj-sopt-test.s3.us-east-2.amazonaws.com/menu/main_image4.png",
+    //     "detailMenu": "연어2, 활어2, 참치2, 찐새우2, 계란2"
+    //   },
+    //   {
+    //     "storeIdx" : "2",
+    //     "title": "연어초밥 12P",        
+    //     "price": "12,000원",
+    //     "image" : "https://yj-sopt-test.s3.us-east-2.amazonaws.com/menu/main_image4.png",
+    //     "detailMenu": "연어12"
+    //   },
+    //   {
+    //     "storeIdx" : "2",
+    //     "title": "연어초밥 12P",        
+    //     "price": "12,000원",
+    //     "image" : "https://yj-sopt-test.s3.us-east-2.amazonaws.com/menu/main_image4.png",
+    //     "detailMenu": "연어12"
+    //   },
+    //   {
+    //     "storeIdx" : "1",
+    //     "title": "왕새우 오일파스타",        
+    //     "price": "21,800원",
+    //     "image" : "https://yj-sopt-test.s3.us-east-2.amazonaws.com/menu/main_image.png",
+    //     "detailMenu": "신선한 왕새우와 해산물이 어우러진 오일 파스타"
+    //   },
+    //   {
+    //     "storeIdx" : "1",
+    //     "title": "살치살 스테이크",        
+    //     "price": "38,000원",
+    //     "image" : "https://yj-sopt-test.s3.us-east-2.amazonaws.com/menu/main_image2.png",
+    //     "detailMenu": "부드러운 살치살 부위의 소고기 스테이크"
+    //   },
+    //   {
+    //     "storeIdx" : "1",
+    //     "title": "관자그린바질 파스타",        
+    //     "price": "23,000원",
+    //     "image" : "https://yj-sopt-test.s3.us-east-2.amazonaws.com/menu/main_image3.png",
+    //     "detailMenu": "바질 소스에 구운 관자가 올려진 라라 시그니처 파스타"
+    //   },
+      
+    // ]).then(function(collection) {
+    // console.log("Data Insert Success.");
+    // });
 
     // Category.createCollection().then(function(collection) {
     //   console.log('Category Collection is created!');

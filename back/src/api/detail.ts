@@ -41,7 +41,7 @@ router.get("/:storeIdx/menu", async (req,res) => {
         const menus = await Menu.find({storeIdx: storeIdx});
   
   
-        if (!menus) {
+        if (!menus.length) {
           return res.status(200).json({ status: 200, success : true, message: "메뉴 데이터 없음", data: menus});
         }
         res.json({status: 200, success: true, message: "메뉴 가져오기 성공", data: menus});

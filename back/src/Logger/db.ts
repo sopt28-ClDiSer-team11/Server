@@ -3,6 +3,7 @@ import config from "../config";
 import Banner from "../models/banner";
 import Category from "../models/category"
 import LastOrder from "../models/lastOrder"
+import Detail from "../models/detail"
 
 const connectDB = async () => {
   try {
@@ -26,6 +27,37 @@ const connectDB = async () => {
     //   },
     //   {
     //     "image": "https://yj-sopt-test.s3.us-east-2.amazonaws.com/card_img_3.png"
+    //   }
+      
+    // ]).then(function(collection) {
+    //   console.log("Data Insert Success.");
+    // });
+
+    // Detail.createCollection().then(function(collection) {
+    //   console.log('Detail Collection is created!');
+    // });
+    // Detail.insertMany([
+    //   {
+    //     "_id" : 1,
+    //     "title" : "라라레스토랑",
+		// 		"star" : "4.8",
+		// 		"review": "300",
+		// 		"cheetahImage": "123.jpg",
+		// 		"minute" : "15~25분",
+		// 		"fee": "2,000원",
+		// 		"minimumPrice": "10,000원",
+		// 		"notice": "라라레스토랑은 양재천이 흐르며 나무숲 가득한 도곡동에 위치해 있습니다. 사계절 모두 특색 있는 라라만의 감성을 느끼실 수 있습니다."
+    //   },
+    //   {
+    //     "_id" : 2,
+    //     "title" : "여우골초밥",
+		// 		"star" : "4.9",
+		// 		"review": "500",
+		// 		"cheetahImage": "123.jpg", 
+		// 		"minute" : "19~29분",
+		// 		"fee": "2,000원",
+		// 		"minimumPrice": "10,000원",
+		// 		"notice": "좋은 재료를 엄선해서 저렴하게 초밥을 판매하고 있는 여우골초밥입니다. 따뜻하고 부드러운 여우골 초밥 꼭 드셔보세요."      
     //   }
       
     // ]).then(function(collection) {

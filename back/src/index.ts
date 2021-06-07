@@ -10,6 +10,8 @@ app.use(express.json());
 
 // Define Routes
 app.use("/api/main", require("./api/main"));
+app.use("/api/detail", require("./api/detail"));
+
 
 
 // error handler
